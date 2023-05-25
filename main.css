@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9e3ee;
+}
+
+.container {
+   margin: 90px auto;
+   max-width: 640px;
+   width: 100%;
+}
+
+form {
+    margin-top: 40px;
+}
