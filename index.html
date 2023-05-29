@@ -5,30 +5,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML e JS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./main.css">
+	<title>HTML e JS</title>
 </head>
 
 <body>
 	<div class="container">
-		<h1>VALIDA DADOS</h1>
-		<h2>Compara valores</h2>
-		<!-- Formulario de validação -->
+		<h1>VALIDAR DADOS</h1>
+		<h2>Comparar valores</h2>
 		<form id="form-validar">
-
 			<input id="valor-a" type="number" placeholder="Inserir um valor" />
+			<p class="error-message">Valor igual ou maior que o campo B!</p>
 			<input id="valor-b" type="number" placeholder="Inserir um valor" />
-
 			<button id="btn-validar" type="submit">Validar</button>
-
 		</form>
-		<!-- Fim Formulario de validação -->
 		<p class="success-message">
-
+			Formulário Válido!
 		</p>
-
 	</div>
-
 	<script src="./main.js"></script>
 </body>
 

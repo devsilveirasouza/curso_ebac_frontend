@@ -6,14 +6,71 @@
 
 body {
     background-color: #d9e3ee;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #111ed4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 .container {
    margin: 90px auto;
-   max-width: 640px;
+   max-width: 500px;
    width: 100%;
 }
 
 form {
     margin-top: 40px;
+}
+
+input, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #525ce9;
+    border: none;
+    text-transform: uppercase;
+    color: #d9e3ee;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #8a90eb;
+}
+
+.success-message {
+    background-color: #525ce9;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    background-color: #ff0000;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error {
+    color: #ff0000;
+    border-color: #ff0000;
+    outline-color: #ff0000;
 }

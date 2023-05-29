@@ -1,20 +1,40 @@
 const formulario = document.getElementById('form-validar');
-
-// console.log(formulario)
-
-function formularioValido(v1, v2) {
-    if (v1 < v2) {
-        alert('Formulário valido')
+let formValido = false;
+// Função para validar o formulário
+function formularioValido(campoA, campoB) {
+    const valor1 = campoA.value;
+    const valor2 = campoB.value;
+    // Verifica se os campos atendem aos requisitos
+    if (valor1 < valor2) {
+        return formValido = true;
     } else {
-        alert('Formulário inválido')
+        return formValido = false;
     }
 }
 
-formulario.addEventListener('submit', function(e) {
+formulario.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const v1 = document.getElementById('valor-a').value;
-    const v2 = document.getElementById('valor-b').value;
-    
-    formularioValido(v1, v2);
+    const campoA = document.getElementById('valor-a');
+    const campoB = document.getElementById('valor-b');
+    const mensagemSucesso = `Formulário válido, valor do campo B: <b>${campoB.value}</b> é maior do campo A: <b>${campoA.value}</b>`;
+
+    formularioValido(campoA, campoB);
+
+    if (formValido) {
+        campoA.classList.remove('error');
+        document.querySelector('.error-message').style.display = 'none';
+        const containerMensagemSucesso = document.querySelector('.success-message');
+        containerMensagemSucesso.innerHTML = mensagemSucesso;
+        containerMensagemSucesso.style.display = 'block';
+        // Limpa os campos do formulário
+        campoA.value = "";
+        campoB.value = "";
+    } else {
+        campoA.classList.add('error');
+        document.querySelector('.error-message').style.display = 'block';
+        // Limpa os campos do formulário
+        campoA.value = "";
+        campoB.value = "";
+    }
 })
