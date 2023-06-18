@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color:#00009f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 0;
+    text-transform: uppercase;    
+}
+
+.titulo-principal {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#btn-nova-tarefa {
+    background-color: #4f99f5fc;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-nova-tarefa:hover {
+    color: #00009f;
+    background-color: #fff;
+}
+
+form {
+    width: 980px;
+    height: 130px;
+    margin: 0 auto;
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.subtitulo-tarefa {
+    color: #00009f;
+    font-size: 24px;
+    font-weight: bold;
+    margin: px 5px;
+}
+
+input, button {
+    padding: 16px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 350px;
+    color: #00009f;
+    font-size: 18px;
+    outline: none;
+}
+
+#btn-adicionar {
+    background-color: #5ebb49;
+    font-weight: bold;
+    color: #223d1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-cancelar {
+    background-color: rgb(255, 166, 0);
+    font-weight: bold;
+    color: #223d1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.az1 { color:#371be5 };
+.az2 { color:#2914d3 };
+.az3 { color:#1c0dc2 };
+.az4 { color:#0e07b0 };
+.az5 { color:#00009f };
+
+.vd1 { color:#447a38 };
+.vd2 { color:#335b2a };
+.vd3 { color:#223d1c };
+.vd4 { color:#111e0e };
+.vd5 { color:#000000 };

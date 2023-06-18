@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
     <title>Lista de tarefas</title>
 </head>
 <body>
     <header>
         <h1 class="titulo-principal">Lista de Tarefas</h1>
-        <button type="button" id="botao-nova-tarefa">Nova Tarefa</button>
+        <button type="button" id="btn-nova-tarefa">Nova Tarefa</button>
     </header>
     <form>
         <h2 class="subtitulo-tarefa">Adicionar nova tarefa</h2>
         <input type="text" id="tarefa-descricao" required placeholder="Inserir tarefa aqui"/>
-        <button type="submit">Adicionar</button>
-        <button type="reset" id="botao-cancelar">Cancelar</button>
+        <button type="submit" id="btn-adicionar">Adicionar</button>
+        <button type="reset" id="btn-cancelar">Cancelar</button>
     </form>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./main.js"></script>
