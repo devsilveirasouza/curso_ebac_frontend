@@ -1,75 +1,305 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- SLICK -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <title>X ACADEMY</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="container container-flex">
-            <h1>X ACADEMY</h1>
-            <!-- MENU HAMBURGUER -->
-            <div class="menu-hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container container-flex">
+        <h1>X ACADEMY</h1>
+        <!-- MENU HAMBURGUER -->
+        <div class="menu-hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
 
-        <!-- NAVEGAÇÃO -->
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#emdestaque">Em destaque</a></li>
-                    <li><a href="#promocao">Promocões</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
+      <!-- NAVEGAÇÃO -->
+      <nav>
+        <div class="container container-flex">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#emdestaque">Em destaque</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- IMAGENS CURSOS CARROUSSEL -->
     <div id="carroussel-imagens">
-        <img src="./images/slide1.png" alt="" alt="Slide 1">
-        <img src="./images/slide2.jpg" alt="" alt="Slide 2">
-        <img src="./images/slide3.png" alt="" alt="Slide 3">
+      <img src="./images/nodejs-2.png" alt="" alt="Slide 1" />
+      <img src="./images/React.jpg" alt="" alt="Slide 2" />
+      <img src="./images/maxresdefault.jpg" alt="" alt="Slide 3" />
     </div>
 
     <!-- SOBRE -->
     <section id="sobre">
-        <div class="container">
-            <img src="./images/html5.jpeg" alt="Academy">
-            <div>
-                <h2>SOBRE - X ACADEMY</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique ea repudiandae molestias ad earum, reprehenderit delectus porro eum placeat quod dolorum vel architecto in sint, cumque quaerat libero error. In fugit similique fugiat perspiciatis architecto, quis aliquam mollitia quas deserunt possimus id maiores provident, cumque, tenetur iste distinctio consequatur?</p>
-            </div>
+      <div class="container container-flex">
+        <img src="./images/vitrine-loja.jpg" alt="Academy" />
+        <div>
+          <h2>SOBRE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            similique ea repudiandae molestias ad earum, reprehenderit delectus
+            porro eum placeat quod dolorum vel architecto in sint, cumque
+            quaerat libero error. 
+          </p>
+        </br>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            similique ea repudiandae molestias ad earum, reprehenderit delectus
+            porro eum placeat quod dolorum vel architecto in sint, cumque
+            quaerat libero error. 
+          </p>
         </div>
+      </div>
     </section>
+    <!-- EM DESTAQUE -->
+    <section id="emdestaque">
+      <div class="container">
+        <h2>Cursos em destaque</h2>
+        <ul class="container-flex lista-de-cursos">
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <del>R$ 99,90</del>
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <del>R$ 99,90</del>
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <del>R$ 99,90</del>
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <!-- CURSOS -->
+    <section id="cursos">
+      <div class="container">
+        <h2>Nossos Cursos</h2>
+        <ul class="container-flex lista-de-cursos">
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+            <li>
+                <img src="./images/html5.jpeg" alt="Curso de html5 do básico ao avançado">
+                <h3>HTML5</h3>
+                <p>
+                    Curso de HTML5 do básico ao avançado com 30 módulos explicados passo a 
+                    passo e com exercícios para fixar o conhecimento.
+                </p>
+                <p>Tempo de duração: 40h.</p>
+                
+                <div class="price">
+                    <strong>R$ 49,90</strong>
+                </div>
+                <button type="button">Cadastrar</button>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <form>
+          <!-- NOME COMPLETO -->
+          <div class="form-campo">
+            <label for="nome">Nome completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Informe seu nome completo...">
+          </div>
+          <!-- EMAIL -->
+          <div class="form-campo">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Informe um e-mail...">
+          </div>
+          <!-- TELEFONE -->
+          <div class="form-campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(99) 9999-9999">
+          </div>
+          <!-- CEP -->
+          <div class="form-campo">
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" placeholder="99999-250">
+          </div>
+          <!-- ENDERECO -->
+          <div class="form-campo">
+            <label for="endereco">Endereço completo:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Endereco completo...">
+          </div>
+          <!-- CPF -->
+          <div class="form-campo">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99">
+          </div>
+          <!-- MENSAGEM -->
+          <div class="form-campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+          </div>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- RODAPE  -->
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2023 &copy; X ACADEMY - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li><a href="#"><img src="./icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./icons/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./icons/youtube.png" alt="Youtube"></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- JQuery -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <!-- Slick JS -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <!-- IMPORTANDO O SCRIPT JS -->
     <script src="./js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

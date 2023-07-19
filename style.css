@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,12 +16,12 @@ html {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-header {
+header, footer {
     background-color: #111;
     padding-top: 16px;
     color: #fff;
@@ -35,11 +37,12 @@ header {
 header .container h1 {
     font-size: 40px;
     font-weight: bold;
-    color: rgba(240, 36, 36, 0.867);
+    color: #fff;
     margin-left: 50px;
 }
 
-header > .container {
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -54,14 +57,14 @@ nav {
 nav li {
     list-style: none;
     display: inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
+    margin: 16px;    
 }
 
 nav li a {
-    color: #0c3285;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -73,36 +76,120 @@ nav li a {
 .menu-hamburguer span {
     height: 1px;
     width: 100%;
-    background-color: #fff;
+    background-color: #ccc;
     display: block;
     margin-bottom: 4px;
+    margin-right: 20px;
 }
 
 #carroussel-imagens img {
-    height: 200px;
+    height: 400px;
 }
 
 #sobre {
     background-color: #111;
     font-size: 18px;
-    font-weight: 500;
     color: #fff;
 }
 
 #sobre img {
-    margin: 20px;
-    padding: 16px;
+    max-width: 400px;
+    margin-bottom: 24px;
+    border-radius: 10px;
 }
 
-#sobre h2 {
-    font-size: 24px;
-    font-weight: 500;
-    color: red;
-    margin: 20px;
-} 
-
 #sobre p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 5px 10px 0 20px;
+    margin-left: 20px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.lista-de-cursos {
+    flex-wrap: wrap;
+}
+
+.lista-de-cursos li {
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-de-cursos li img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.lista-de-cursos h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 40%;
+    padding: 8px 0;
+    border: none;
+    background-color: #0c3285;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #1d5add;
+}
+
+.price {
+    margin: 14px 0;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 100px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
 }
