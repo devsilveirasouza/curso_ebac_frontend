@@ -4,3 +4,105 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+html {
+    overflow-x: hidden;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header .container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(240, 36, 36, 0.867);
+    margin-left: 50px;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #0c3285;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #0c3285;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#carroussel-imagens img {
+    height: 200px;
+}
+
+#sobre {
+    background-color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#sobre img {
+    margin: 20px;
+    padding: 16px;
+}
+
+#sobre h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: red;
+    margin: 20px;
+} 
+
+#sobre p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 10px 0 20px;
+}
